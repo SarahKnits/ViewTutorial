@@ -21,6 +21,7 @@
 		0A39E51E19BFC8B400AB9CE0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A39E50019BFC8B300AB9CE0 /* UIKit.framework */; };
 		0A39E52619BFC8B400AB9CE0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0A39E52419BFC8B400AB9CE0 /* InfoPlist.strings */; };
 		0A39E52819BFC8B400AB9CE0 /* viewTutorialTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A39E52719BFC8B400AB9CE0 /* viewTutorialTests.m */; };
+		0A39E53319BFCA2200AB9CE0 /* SGGrid.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A39E53219BFCA2200AB9CE0 /* SGGrid.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		0A39E52319BFC8B400AB9CE0 /* viewTutorialTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "viewTutorialTests-Info.plist"; sourceTree = "<group>"; };
 		0A39E52519BFC8B400AB9CE0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0A39E52719BFC8B400AB9CE0 /* viewTutorialTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = viewTutorialTests.m; sourceTree = "<group>"; };
+		0A39E53119BFCA2200AB9CE0 /* SGGrid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGGrid.h; sourceTree = "<group>"; };
+		0A39E53219BFCA2200AB9CE0 /* SGGrid.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGGrid.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +120,8 @@
 				0A39E50E19BFC8B300AB9CE0 /* Main.storyboard */,
 				0A39E51119BFC8B300AB9CE0 /* SGViewController.h */,
 				0A39E51219BFC8B300AB9CE0 /* SGViewController.m */,
+				0A39E53119BFCA2200AB9CE0 /* SGGrid.h */,
+				0A39E53219BFCA2200AB9CE0 /* SGGrid.m */,
 				0A39E51419BFC8B300AB9CE0 /* Images.xcassets */,
 				0A39E50319BFC8B300AB9CE0 /* Supporting Files */,
 			);
@@ -253,6 +258,7 @@
 				0A39E50D19BFC8B300AB9CE0 /* SGAppDelegate.m in Sources */,
 				0A39E51319BFC8B300AB9CE0 /* SGViewController.m in Sources */,
 				0A39E50919BFC8B300AB9CE0 /* main.m in Sources */,
+				0A39E53319BFCA2200AB9CE0 /* SGGrid.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
