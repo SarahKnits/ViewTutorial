@@ -18,6 +18,21 @@
 
 @implementation SGViewController
 
+// This function is from Stack Overflow
+- (UIImage *)imageWithColor:(UIColor *)color {
+    CGRect rect = CGRectMake(0.0f, 0.0f, 1.0f, 1.0f);
+    UIGraphicsBeginImageContext(rect.size);
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    
+    CGContextSetFillColorWithColor(context, [color CGColor]);
+    CGContextFillRect(context, rect);
+    
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
+    return image;
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -47,11 +62,11 @@
     
     // create target for button
     [_button addTarget:self action:@selector(buttonPressed:)forControlEvents:UIControlEventTouchUpInside];
-    [_button addTarget:self action:@selector(buttonHighlight:)forControlEvents:UIControlStateHighlighted];
-    [_button addTarget:self action:@selector(buttonReset:)forControlEvents:UIControlStateNormal];
     [_button setTitle:@"Hit me!" forState:UIControlStateNormal];
     _button.titleLabel.font = [UIFont systemFontOfSize: 12];
     [_button setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
+    // From stack overflow
+    [_button setBackgroundImage:[self imageWithColor:[UIColor yellowColor]] forState:UIControlStateHighlighted];
     
 }
 
@@ -71,9 +86,6 @@
     NSLog(@"Highlight!");
 }
 
--(void)buttonReset:(id)sender{
-    _button.backgroundColor = [UIColor redColor];
-    NSLog(@"Reset!");
-}
+
 
 @end
